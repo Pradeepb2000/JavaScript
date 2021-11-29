@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="../form validation/style/style.css">
+    <script src="../form validation/script/script.js"></script>
+</head>
+<body>
+    <!-- APPLICATION FORM -->
+    <div class="Container">
+        <h1 id="reg">Application Form </h1>
+        
+            <center>
+            <table id="tab">
+                <tr>
+                   <td>
+                       <label for="FirstName">FirstName:*</label>
+                      
+        
+                   </td>
+                   <td>
+                       <input type="text" name="FirstName" id="FirstName" placeholder="FirstName">
+                       <label id="fnstyle" style="color: red; visibility: hidden;">*first name is required</label>
+                   </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="FatherName">Father's Name*</label>
+                </td>
+                <td>
+                    <input type="text" name="FatherName" id="FatherName" placeholder="FatherName">
+                    <label id="fatherstyle" style="color: red; visibility: hidden;">*fathers name is required</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email:*</label>
+                </td>
+                <td>
+                    <input type="email" name="Email" id="Email" placeholder="xyz@gmail.com">
+                    <label id="emailstyle" style="color: red; visibility: hidden;">*enter valid email id</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="DOB">DOB:*</label>
+                   
+                </td>
+                <td>
+                    <input type="text" name="DOB" id="DOB" placeholder="21-08-2000" >
+                    <label id="dobstyle" style="color: red; visibility: hidden;">*dob format is incorrect</label>
+                </td>
+            </tr>
+    
+            <tr>
+                    <td>
+                        <label for="MobileNumber">MobileNumber:*</label>
+                    </td>
+                    <td>
+                        <input type="text" name="MobileNumber" id="MobileNumber" placeholder="+91-0000000000" maxlength="10">
+                        <label id="mobstyle" style="color: red; visibility: hidden;">*enter the valid mobilenumber</label>
+                    </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="Address1"> Current Address:*</label>
+                </td>
+                <td>
+                    <input type="text" name="Address1" id="Address1" placeholder="Address line1.....">
+                    <label id="add1style" style="color: red; visibility: hidden;">*Address cannot be empty</label>
+                </td>
+                <td>
+                    <input type="text" name="Address2" id="Address2" placeholder="Address line 2........">
+                </td>
+            
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="text" name="City1" id="City1" placeholder="Chennai">
+                    <label id="citystyle" style="color: red; visibility: hidden;">*enter the city</label>
+
+                </td>
+                <td>
+                    <select name="State" id="State1">
+                        <option value="TamilNadu">TamilNadu</option>
+                        <option value="AndhraPradesh">AndhraPradesh</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Telangana">Telangana</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name="Pincode1" id="Pincode1" placeholder="635601">
+                    <label id="pinstyle" style="color: red; visibility: hidden;">*enter the valid pincode(should be 6 digit number)</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Permanent_Address">Permanent Address:*</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="request_type" onchange="permanentvali()" id="Permanent_Address"><label for="Permanent_Address">Same as current address.</label>
+                    <label id="permanentstyle" style="color: red; visibility: hidden;">*  Enter the Permanent Address</label>
+                    
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <input type="text" name="Address3" id="Address3" placeholder="Address line1.....">
+                    
+                </td>
+                <td>
+                    <input type="text" name="Address4" id="Address4" placeholder="Address line 2........">
+                </td>
+            
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="text" name="City2" id="City2" placeholder="Chennai">
+                   
+
+                </td>
+                <td>
+                    <select name="State" id="State2">
+                        <option value="TamilNadu">TamilNadu</option>
+                        <option value="AndhraPradesh">AndhraPradesh</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Telangana">Telangana</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name="Pincode2" id="Pincode2" placeholder="635601">
+                </td>
+            </tr> 
+                <tr>
+                    <td>
+                        <label for="Photo">Upload profile photo*(JPG/PNG format only)</label>
+                        <br><br><br><br><br>
+                    </td>
+                    <td>
+                        <input  style="text-align: left;" type="file" name="Photo" id="Photo">
+                    </td>
+                </tr>
+                
+
+                <tr id="but">
+                   <td >
+                    <button onclick="  return validation()">submit</button>
+                   </td>
+                </tr>
+        </table>
+        
+    </center>
+        </form>
+
+        
+        
+    </div>
+    
+</body>
+</html>
+
+  
+        
+
+    
+</body>
+</html>
